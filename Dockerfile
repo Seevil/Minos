@@ -1,4 +1,4 @@
-from seevil/python
+from python：2
 ADD . /python-tornado-minos
 RUN pip install -r /python-tornado-minos/requirements.txt
 
@@ -6,4 +6,4 @@ WORKDIR /python-tornado-minos
 
 EXPOSE 80
 
-CMD python nohup ./main.py
+CMD [ "python", "./main.py" ]
