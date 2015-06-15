@@ -1,9 +1,19 @@
-from python：2.7
-ADD . /python-tornado-minos
-RUN pip install -r /python-tornado-minos/requirements.txt
+FROM python:2.7
 
-WORKDIR /python-tornado-minos
+# Add and install Python modules
 
-EXPOSE 80
+ADD /requirements.txt 
 
-CMD [ "python", "./main.py" ]
+RUN cd /src; pip install -r requirements.txt
+
+# Bundle app source
+
+ADD . /src
+
+# Expose
+
+EXPOSE  5001
+
+# Run
+
+CMD ["python", "/src/main.py"]
