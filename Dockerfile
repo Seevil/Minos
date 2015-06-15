@@ -6,4 +6,4 @@ WORKDIR /python-tornado-minos
 
 EXPOSE 80
 
-CMD python app.py 
+CMD python nohup ./main.py
