@@ -1,4 +1,4 @@
-from python：2
+from python：2.7
 ADD . /python-tornado-minos
 RUN pip install -r /python-tornado-minos/requirements.txt
 
