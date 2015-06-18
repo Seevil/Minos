@@ -5,4 +5,4 @@ cd minos/
 RUN  pip install -r requirements.txt
 # Run
 
-CMD ["python", "./main.py --port=80 "]
+CMD ["./main.py --port=80 "]
