@@ -1,8 +1,8 @@
 FROM python:2.7
 
 # Add and install Python modules
-cd minos/
-RUN  pip install -r requirements.txt
+
+RUN  pip install -r /minos/requirements.txt
 # Run
 
 CMD ["./main.py --port=80 "]
