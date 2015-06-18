@@ -5,4 +5,4 @@ FROM python:2.7
 RUN  pip install -r requirements.txt
 # Run
 
-CMD ["python", "./main.py"]
+CMD ["python", "./main.py --port=80 "]
